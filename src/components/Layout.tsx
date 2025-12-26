@@ -6,14 +6,14 @@
  */
 
 import { NavLink, Outlet } from 'react-router-dom';
-import { Plane, Settings, LayoutDashboard, Radio, Target, Zap, BarChart3, Sun, Moon } from 'lucide-react';
+import { Plane, Settings, LayoutDashboard, Radio, Target, Zap, BarChart3 } from 'lucide-react';
 import AlertModal from './AlertModal';
 import { useEffect, useState } from 'react';
 import { useTheme } from '@/lib/ThemeContext';
 
 export default function Layout() {
     const [currentTime, setCurrentTime] = useState(new Date());
-    const { theme, toggleTheme } = useTheme();
+    const { theme } = useTheme();
 
     useEffect(() => {
         const timer = setInterval(() => setCurrentTime(new Date()), 1000);
@@ -70,21 +70,7 @@ export default function Layout() {
 
                 {/* Right - Status Panel & Theme Toggle */}
                 <div className="flex items-center gap-4">
-                    {/* Theme Toggle */}
-                    <button
-                        onClick={toggleTheme}
-                        className={`w-12 h-12 rounded-xl border-2 flex items-center justify-center transition-all duration-300 ${theme === 'dark'
-                                ? 'border-[#FFFF00] bg-gradient-to-r from-[rgba(255,255,0,0.15)] to-transparent shadow-[0_0_20px_rgba(255,255,0,0.3)] hover:shadow-[0_0_30px_rgba(255,255,0,0.5)]'
-                                : 'border-[#333333] bg-[#1a1a2e] shadow-lg hover:bg-[#2a2a3e]'
-                            }`}
-                        title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-                    >
-                        {theme === 'dark' ? (
-                            <Sun className="w-6 h-6 text-[#FFFF00]" />
-                        ) : (
-                            <Moon className="w-6 h-6 text-white" />
-                        )}
-                    </button>
+
 
                     {/* Online Status */}
                     <div className="flex items-center gap-3 px-5 py-2.5 rounded-xl border-2 border-[#00FF66] bg-gradient-to-r from-[rgba(0,255,102,0.15)] to-transparent shadow-[0_0_20px_rgba(0,255,102,0.3)]">
