@@ -19,13 +19,13 @@
 ## 📸 Screenshots
 
 ````carousel
-![Dashboard View](file:///Users/aman/.gemini/antigravity/brain/86549db1-22dd-4536-9c5b-0a6b80ec0203/dashboard_view_1766769646853.png)
+![Dashboard View](docs/images/dashboard.png)
 <!-- slide -->
-![Fleet Management](file:///Users/aman/.gemini/antigravity/brain/86549db1-22dd-4536-9c5b-0a6b80ec0203/fleet_view_1766769658089.png)
+![Fleet Management](docs/images/fleet.png)
 <!-- slide -->
-![Mission Statistics](file:///Users/aman/.gemini/antigravity/brain/86549db1-22dd-4536-9c5b-0a6b80ec0203/missions_view_1766769667928.png)
+![Mission Statistics](docs/images/missions.png)
 <!-- slide -->
-![Analytics Dashboard](file:///Users/aman/.gemini/antigravity/brain/86549db1-22dd-4536-9c5b-0a6b80ec0203/analytics_view_1766769678018.png)
+![Analytics Dashboard](docs/images/analytics.png)
 ````
 
 ## 📖 Table of Contents
@@ -35,6 +35,8 @@
 - [Pages](#-pages)
 - [Tech Stack](#-tech-stack)
 - [Getting Started](#-getting-started)
+- [Getting Started](#-getting-started)
+- [Technical Documentation](docs/TECHNICAL_DOCS.md)
 - [Detailed Working Guide](#-detailed-working-guide)
   - [Mission Planning](#mission-planning-workflow)
   - [Fleet Management](#fleet-management-workflow)
@@ -68,7 +70,6 @@ The system allows for precise survey plotting on a 3D globe, optimizing flight p
 - **Real-time Telemetry**: Live updates of battery, speed, signal, and GPS position.
 - **Mission Progress**: HUD overlay showing improved flight metrics, ETA, and waypoints.
 - **Control Center**: Pause, Resume, Abort, RTH (Return to Home), and Speed Control (1x-10x).
-- **Theme Support**: **Dark (Cyberpunk)** and **Light (Clean)** modes with dedicated styling.
 
 ### 📊 Analytics & Reporting
 - **Organization Stats**: Total flight hours, area covered (km²), and mission success rates.
@@ -145,7 +146,7 @@ npm run dev
 1.  **Performance Review**: Visit **Analytics** to see the big picture.
 2.  **KPIs**: Track "Total Area Covered" and "Flight Hours" to measure team productivity.
 3.  **Success Rate**: Monitor "Completed" vs "Aborted" missions to identify operational issues.
-4.  **Light Mode**: Toggle the sun icon in the header for a clean, high-contrast report view suitable for printing/presentations.
+4.  **Success Rate**: Monitor "Completed" vs "Aborted" missions to identify operational issues.
 
 ---
 
